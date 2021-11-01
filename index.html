@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Quản lý nhân sự </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    .hide {
+        display: none;
+    }
+</style>
+<body class="container">
+<img src="anh nen1.jpg" height="468" width="100%"/>
+<h1>Quản lý nhân sự</h1>
+<table class="table table-striped table-bordered table-hover col-8">
+    <tr>
+        <th>Nhập họ và tên</th>
+        <td>
+            <input type="text" class="form-control" name="name">
+        </td>
+    </tr>
+    <tr>
+        <th>Nhập địa chỉ mail</th>
+        <td><input type="text" class="form-control" name="mail"></td>
+    </tr>
+    <tr>
+        <th>Nhập số điện thoại</th>
+        <td><input type="text" class="form-control" name="phone"></td>
+    </tr>
+    <tr>
+        <th>Nhập địa chỉ</th>
+        <td><input type="text" class="form-control" name="address"></td>
+    </tr>
+    <tr>
+        <th>Chọn chức vụ</th>
+        <td>
+            <input type="radio" name="position" value="Giám đốc"> Giám đốc
+            <input type="radio" name="position" value="Nhân viên"> Nhân viên
+            <input type="radio" name="position" value="Tạp vụ"> Tạp vụ
+        </td>
+    </tr>
+    <tr>
+        <th>Chọn phòng ban</th>
+        <td><input type="text" class="form-control" name="department"></td>
+    </tr>
+    <tr>
+        <th>Nhập sở thích</th>
+        <td><input type="text" class="form-control" name="interest"></td>
+    </tr>
+    <tr>
+        <th><button type="button" id="add-infor" class="btn btn-success" onclick="addAccount()">Hoàn thành</button></th>
+        <th><button type="button" id="update-success" class="btn btn-success hide" onclick="upDateSuccess()">Hoàn thành Cập nhật</button></th>
+    </tr>
+</table>
+
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>Số thự tự</th>
+        <th>Họ và tên</th>
+        <th>Địa chỉ mail</th>
+        <th>Số điện thoại</th>
+        <th>Địa chỉ</th>
+        <th>Chức vụ</th>
+        <th>Phòng ban</th>
+        <th>Sở thích</th>
+        <th>
+
+        </th>
+    </tr>
+    </thead>
+    <tbody id="data-account">
+    </tbody>
+
+    <script src="nhap.js"></script>
+</table>
+</body>
+</html>
